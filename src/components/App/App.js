@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import Search from '../Search/Search';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Flexbox from 'flexbox-react';
+
+import Search from '../Search/Search';
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Search />
+        <Flexbox flexDirection="row" minHeight="100vh" flexWrap="wrap" justifyContent="center">
+          <Search />
+        </Flexbox>
       </MuiThemeProvider>
     );
   }

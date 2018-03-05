@@ -9,7 +9,7 @@ const style = {
 
 const Search = () => (
     <div>
-        <TextField hintText="Full width"/>
+        <TextField hintText="City"/>
         <RaisedButton label="Search" primary style={style} />
     </div>
 );
