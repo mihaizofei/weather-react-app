@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Flexbox flexDirection="row" minHeight="100vh" flexWrap="wrap" justifyContent="center">
+        <Flexbox flexDirection="row" flexWrap="wrap" justifyContent="center">
           <Search />
         </Flexbox>
       </MuiThemeProvider>
