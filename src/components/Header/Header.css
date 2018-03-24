@@ -14,15 +14,12 @@
 
 .icon-style {
     opacity: 0.54;
-    margin-top: 8px;
-    margin-right: 10px;
 }
 
-#root > div:nth-child(1) > div > div {
+#root > div > div:nth-child(1) > div > div {
     margin: auto !important;
 }
 
 svg + svg {
     margin-left: 15px;
 }
-

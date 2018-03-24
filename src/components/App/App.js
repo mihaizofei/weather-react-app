@@ -9,10 +9,12 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <Header />
-        <Flexbox flexDirection="row" flexWrap="wrap" justifyContent="center">
-          <Search />
-        </Flexbox>
+        <div>
+          <Header />
+          <Flexbox flexDirection="row" flexWrap="wrap" justifyContent="center">
+            <Search />
+          </Flexbox>
+        </div>
       </MuiThemeProvider>
     );
   }
