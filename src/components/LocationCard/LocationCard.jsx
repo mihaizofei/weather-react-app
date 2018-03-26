@@ -21,7 +21,7 @@ const LocationCard = () => (
         />
         <div className='paper-container'>
             <Paper className='card-body-paper' zDepth={1}>
-                <div className='icon cloudy'></div>
+                <div className='icon cloudy-day'></div>
                 <div className='current-conditions'>11<span className='degrees'>°C</span></div>
             </Paper>
             <Paper className='card-body-paper' zDepth={1}>
@@ -44,16 +44,48 @@ const LocationCard = () => (
             </Paper>
         </div>
         <CardText className='one-day-container' expandable={true}>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
-            <Paper className='one-day'></Paper>
+            <Paper className='one-day'>
+                <div className="date">Tue</div>
+                <div class="small-icon partly-cloudy-day"></div>
+                <div class="temp-high"><span class="value">22</span>° </div>
+                <div class="temp-low"><span class="value">16</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Wed</div>
+                <div class="small-icon clear-day"></div>
+                <div class="temp-high"><span class="value">20</span>° </div>
+                <div class="temp-low"><span class="value">15</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Thu</div>
+                <div class="small-icon thunderstorm-day"></div>
+                <div class="temp-high"><span class="value">9</span>° </div>
+                <div class="temp-low"><span class="value">6</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Fri</div>
+                <div class="small-icon rain-day"></div>
+                <div class="temp-high"><span class="value">12</span>° </div>
+                <div class="temp-low"><span class="value">5</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Sat</div>
+                <div class="small-icon wind-day"></div>
+                <div class="temp-high"><span class="value">18</span>° </div>
+                <div class="temp-low"><span class="value">10</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Sun</div>
+                <div class="small-icon clear-day"></div>
+                <div class="temp-high"><span class="value">25</span>° </div>
+                <div class="temp-low"><span class="value">12</span>°</div>
+            </Paper>
+            <Paper className='one-day'>
+                <div className="date">Mon</div>
+                <div class="small-icon partly-cloudy-day"></div>
+                <div class="temp-high"><span class="value">23</span>° </div>
+                <div class="temp-low"><span class="value">14</span>°</div>
+            </Paper>
         </CardText>
     </Card>
 );
