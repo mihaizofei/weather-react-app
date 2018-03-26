@@ -54,3 +54,17 @@
 .current-conditions-details-prefix {
     color: #888;
 }
+
+@media (max-width: 450px) {
+    .card-header-subtitle {
+      font-size: 0.9em; }
+    .icon {
+      width: 80px;
+      height: 80px; }
+    .current-conditions {
+      font-size: 2.3em; 
+    }
+    .current-conditions-details {
+        font-size: 1.1em;
+    }
+ }
