@@ -1,8 +1,56 @@
 .location-card {
     width: 100%;
-    margin: 16px;
+    margin: 25px 16px 16px 16px;
 }
 
-.location-header > div > span:nth-child(1) {
-    font-size: 1.75em !important;
+.card-header-title {
+    font-size: 1.75em;
+}
+
+.card-header-subtitle {
+    font-size: 1.25em;
+}
+
+.card-body-paper {
+    height: 128px;
+    width: 50%;
+    display: inline-block;
+    box-shadow: none !important;
+    vertical-align: top;
+}
+
+.paper-container {
+    padding: 0 16px;
+    margin-top: -15px;
+}
+
+.icon {
+    width: 128px;
+    height: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.cloudy {
+    background-image: url('../../images/cloudy.png');
+}
+
+.current-conditions {
+    display: inline-block;
+    font-size: 4em;
+    vertical-align: top;
+}
+
+.degrees {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
+.current-conditions-details {
+    font-size: 1.25em;
+}
+
+.current-conditions-details-prefix {
+    color: #888;
 }
