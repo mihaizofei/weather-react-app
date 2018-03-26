@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardHeader, CardText} from 'material-ui/Card';
+import { Card, CardHeader, CardText } from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 
 import './LocationCard.css';
@@ -10,7 +10,7 @@ const LocationCard = () => (
             title={
                 <div className='card-header-title'>Craiova, RO</div>
             }
-            subtitle= {
+            subtitle={
                 <div className='card-header-subtitle'>
                     <div>Sun, 25 Mar 2018 9:00 AM</div>
                     <div>Cloudy</div>
@@ -43,12 +43,18 @@ const LocationCard = () => (
                 </div>
             </Paper>
         </div>
-        <CardText expandable={true}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-    </CardText>
+        <CardText className='one-day-container' expandable={true}>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+            <Paper className='one-day'></Paper>
+        </CardText>
     </Card>
 );
 

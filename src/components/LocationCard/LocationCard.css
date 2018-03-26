@@ -55,6 +55,19 @@
     color: #888;
 }
 
+.one-day-container {
+    display: flex;
+}
+
+.one-day {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block !important;
+    flex: 1;
+}
+
 @media (max-width: 450px) {
     .card-header-subtitle {
       font-size: 0.9em; }
