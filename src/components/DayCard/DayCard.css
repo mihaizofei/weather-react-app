@@ -1,0 +1,47 @@
+.one-day {
+    height: 110px;
+    width: 100px;
+    margin: 0;
+    text-align: center;
+    display: inline-block !important;
+    flex: 1;
+    box-shadow: none !important;
+}
+
+.date {
+    font-size: 1.5em;
+}
+
+.small-icon {
+    width: 64px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.temp-high, .temp-low {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.temp-low {
+    color: #888;
+}
+
+@media (max-width: 450px) {
+    .small-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .date {
+        font-size: 1.1em;
+    }
+
+    .temp-high, .temp-low {
+        display: block;
+        font-size: 1.2em;
+    }
+}

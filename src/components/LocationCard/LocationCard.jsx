@@ -2,7 +2,9 @@ import React from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 
+import DayCard from '../DayCard/DayCard.jsx';
 import './LocationCard.css';
+import '../common/main.css';
 
 const LocationCard = () => (
     <Card className='location-card'>
@@ -44,48 +46,13 @@ const LocationCard = () => (
             </Paper>
         </div>
         <CardText className='one-day-container' expandable={true}>
-            <Paper className='one-day'>
-                <div className="date">Tue</div>
-                <div class="small-icon partly-cloudy-day"></div>
-                <div class="temp-high"><span class="value">22</span>° </div>
-                <div class="temp-low"><span class="value">16</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Wed</div>
-                <div class="small-icon clear-day"></div>
-                <div class="temp-high"><span class="value">20</span>° </div>
-                <div class="temp-low"><span class="value">15</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Thu</div>
-                <div class="small-icon thunderstorm-day"></div>
-                <div class="temp-high"><span class="value">9</span>° </div>
-                <div class="temp-low"><span class="value">6</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Fri</div>
-                <div class="small-icon rain-day"></div>
-                <div class="temp-high"><span class="value">12</span>° </div>
-                <div class="temp-low"><span class="value">5</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Sat</div>
-                <div class="small-icon wind-day"></div>
-                <div class="temp-high"><span class="value">18</span>° </div>
-                <div class="temp-low"><span class="value">10</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Sun</div>
-                <div class="small-icon clear-day"></div>
-                <div class="temp-high"><span class="value">25</span>° </div>
-                <div class="temp-low"><span class="value">12</span>°</div>
-            </Paper>
-            <Paper className='one-day'>
-                <div className="date">Mon</div>
-                <div class="small-icon partly-cloudy-day"></div>
-                <div class="temp-high"><span class="value">23</span>° </div>
-                <div class="temp-low"><span class="value">14</span>°</div>
-            </Paper>
+            <DayCard day="Tue" dayType="partly-cloudy-day" tempHigh="22" tempLow="16"/>
+            <DayCard day="Wed" dayType="clear-day" tempHigh="20" tempLow="15"/>
+            <DayCard day="Thu" dayType="thunderstorm-day" tempHigh="9" tempLow="6"/>
+            <DayCard day="Fri" dayType="rain-day" tempHigh="12" tempLow="5"/>
+            <DayCard day="Sat" dayType="wind-day" tempHigh="18" tempLow="10"/>
+            <DayCard day="Sun" dayType="clear-day" tempHigh="24" tempLow="12"/>
+            <DayCard day="Mon" dayType="partly-cloudy-day" tempHigh="23" tempLow="1r"/>
         </CardText>
     </Card>
 );

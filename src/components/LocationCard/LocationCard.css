@@ -48,68 +48,12 @@
     padding: 0 16px !important;
 }
 
-.one-day {
-    height: 110px;
-    width: 100px;
-    margin: 0;
-    text-align: center;
-    display: inline-block !important;
-    flex: 1;
-    box-shadow: none !important;
-}
-
-.date {
-    font-size: 1.5em;
-}
-
-.temp-high, .temp-low {
-    display: inline-block;
-    font-size: 1.2em;
-}
-
-.temp-low {
-    color: #888;
-}
-
-.small-icon {
-    width: 64px;
-    height: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .icon {
     width: 128px;
     height: 128px;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
-}
-
-.cloudy-day {
-    background-image: url('../../images/cloudy.png');
-}
-
-.partly-cloudy-day {
-    background-image: url('../../images/partly-cloudy.png');
-}
-
-.rain-day {
-    background-image: url('../../images/rain.png');
-}
-
-.thunderstorm-day {
-    background-image: url('../../images/thunderstorm.png');
-}
-
-.wind-day {
-    background-image: url('../../images/wind.png');
-}
-
-.clear-day {
-    background-image: url('../../images/clear.png');
 }
 
 @media (max-width: 450px) {
@@ -120,22 +64,10 @@
       width: 80px;
       height: 80px; 
     }
-    .small-icon {
-        width: 32px;
-        height: 32px;
-    }
     .current-conditions {
       font-size: 2.3em; 
     }
     .current-conditions-details {
         font-size: 1.1em;
-    }
-    .date {
-        font-size: 1.1em;
-    }
-
-    .temp-high, .temp-low {
-        display: block;
-        font-size: 1.2em;
     }
  }
